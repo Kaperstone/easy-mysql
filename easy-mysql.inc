@@ -87,6 +87,7 @@
 #define SQL_Warning(%0)      		(printf("[MYSQL] - WARNING: " %0))
 #define SQL_Error(%0)        		(printf("[MYSQL] - ERROR: " %0))
 #define SQL_Notice(%0)				(printf("[MYSQL] - NOTICE: " %0))
+#define SQL::Launch(%0)				SQL_Close(%0)
 
 enum SQL::datatypes {SQL_TYPE_INT, SQL_TYPE_VCHAR, SQL_TYPE_FLOAT} 
 enum SQL::qtypes {SQL::type_update, SQL::type_create, SQL::type_insert, SQL_type_delete, SQL::type_read}
